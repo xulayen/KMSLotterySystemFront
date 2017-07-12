@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMSLotterySystemFront", "KMSLotterySystemFront\KMSLotterySystemFront.csproj", "{024E9F89-8D48-467A-AA52-042EB727C259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMSLotterySystemFront.DBUtility", "KMSLotterySystemFront.DBUtility\KMSLotterySystemFront.DBUtility.csproj", "{6062FA2F-3FE5-4C93-BB3D-1B82F2FA33FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMSLotterySystemFront.BLLLottery", "KMSLotterySystemFront.BLLLottery\KMSLotterySystemFront.BLLLottery.csproj", "{C201C2D6-13E4-4FD3-8BDA-906829839F78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMSLotterySystemFront.Common", "KMSLotterySystemFront.Common\KMSLotterySystemFront.Common.csproj", "{4ABDCDB3-EC38-4413-B1F8-B28081D5FE3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMSLotterySystemFront.Logger", "KMSLotterySystemFront.Logger\KMSLotterySystemFront.Logger.csproj", "{4A178BB7-D6D9-40C3-A23F-6BA474BDC70C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMSLotterySystemFront.Model", "KMSLotterySystemFront.Model\KMSLotterySystemFront.Model.csproj", "{7D4259CE-92B7-43E8-A47C-590F4C88B0AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMSLotterySystemFront.BLL", "KMSLotterySystemFront.BLL\KMSLotterySystemFront.BLL.csproj", "{4073E305-2CA1-4D79-8CE3-B2996269D023}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMSLotterySystemFront.DAL", "KMSLotterySystemFront.DAL\KMSLotterySystemFront.DAL.csproj", "{E29D1B3D-9B96-46F6-A9D8-9C47066F1709}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMSLotterySystemFront.Platform", "KMSLotterySystemFront.Platform\KMSLotterySystemFront.Platform.csproj", "{8ADD81E3-F6E2-42E7-9404-CF4E447BAC41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMSLotterySystemFront.Error", "KMSLotterySystemFront.Error\KMSLotterySystemFront.Error.csproj", "{E48442DF-6257-493F-884A-2C93D85A31AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{024E9F89-8D48-467A-AA52-042EB727C259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024E9F89-8D48-467A-AA52-042EB727C259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024E9F89-8D48-467A-AA52-042EB727C259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{024E9F89-8D48-467A-AA52-042EB727C259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6062FA2F-3FE5-4C93-BB3D-1B82F2FA33FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6062FA2F-3FE5-4C93-BB3D-1B82F2FA33FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6062FA2F-3FE5-4C93-BB3D-1B82F2FA33FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6062FA2F-3FE5-4C93-BB3D-1B82F2FA33FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C201C2D6-13E4-4FD3-8BDA-906829839F78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C201C2D6-13E4-4FD3-8BDA-906829839F78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C201C2D6-13E4-4FD3-8BDA-906829839F78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C201C2D6-13E4-4FD3-8BDA-906829839F78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ABDCDB3-EC38-4413-B1F8-B28081D5FE3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ABDCDB3-EC38-4413-B1F8-B28081D5FE3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ABDCDB3-EC38-4413-B1F8-B28081D5FE3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ABDCDB3-EC38-4413-B1F8-B28081D5FE3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A178BB7-D6D9-40C3-A23F-6BA474BDC70C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A178BB7-D6D9-40C3-A23F-6BA474BDC70C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A178BB7-D6D9-40C3-A23F-6BA474BDC70C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A178BB7-D6D9-40C3-A23F-6BA474BDC70C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D4259CE-92B7-43E8-A47C-590F4C88B0AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D4259CE-92B7-43E8-A47C-590F4C88B0AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D4259CE-92B7-43E8-A47C-590F4C88B0AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D4259CE-92B7-43E8-A47C-590F4C88B0AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4073E305-2CA1-4D79-8CE3-B2996269D023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4073E305-2CA1-4D79-8CE3-B2996269D023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4073E305-2CA1-4D79-8CE3-B2996269D023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4073E305-2CA1-4D79-8CE3-B2996269D023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E29D1B3D-9B96-46F6-A9D8-9C47066F1709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E29D1B3D-9B96-46F6-A9D8-9C47066F1709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E29D1B3D-9B96-46F6-A9D8-9C47066F1709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E29D1B3D-9B96-46F6-A9D8-9C47066F1709}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ADD81E3-F6E2-42E7-9404-CF4E447BAC41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ADD81E3-F6E2-42E7-9404-CF4E447BAC41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ADD81E3-F6E2-42E7-9404-CF4E447BAC41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ADD81E3-F6E2-42E7-9404-CF4E447BAC41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E48442DF-6257-493F-884A-2C93D85A31AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E48442DF-6257-493F-884A-2C93D85A31AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E48442DF-6257-493F-884A-2C93D85A31AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E48442DF-6257-493F-884A-2C93D85A31AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html ng-app="KMS" ng-controller="configCtrl">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>注册信息</title>
+</head>
+<body class="login_page none">
+    <fieldset ng-controller="regCtrl">
+        <legend>注册</legend>
+        <input type="text" name="name" value=" " placeholder="姓名" ng-model="R.UserName" />
+        <br />
+        <br />
+        <input type="text" name="name" value=" " placeholder="城市" ng-model="R.CityName" />
+        <br />
+        <br />
+        <input type="tel" name="name" value=" " placeholder="手机号" maxlength="11" ng-model="R.Mobile" />
+        <br />
+        <br />
+        <input type="text" name="name" class="lInput_msg" placeholder="验证码" value=" " ng-model="R.VerifyCode" />
+        <button ng-click="R.btnSend()" ng-bind="R.paracont">
+        </button>
+        <br />
+        <br />
+        <button ng-click="R.Submit()">
+            注 册</button>
+    </fieldset>
+   
+</body>
+</html>

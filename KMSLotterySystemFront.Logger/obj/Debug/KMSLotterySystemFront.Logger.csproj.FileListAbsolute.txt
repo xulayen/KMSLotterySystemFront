@@ -1,0 +1,6 @@
+E:\工作\项目文件\康明斯防伪抽奖\KMSLotterySystemFront\KMSLotterySystemFront.Logger\bin\Debug\KMSLotterySystemFront.Logger.dll
+E:\工作\项目文件\康明斯防伪抽奖\KMSLotterySystemFront\KMSLotterySystemFront.Logger\bin\Debug\KMSLotterySystemFront.Logger.pdb
+E:\工作\项目文件\康明斯防伪抽奖\KMSLotterySystemFront\KMSLotterySystemFront.Logger\obj\Debug\KMSLotterySystemFront.Logger.dll
+E:\工作\项目文件\康明斯防伪抽奖\KMSLotterySystemFront\KMSLotterySystemFront.Logger\obj\Debug\KMSLotterySystemFront.Logger.pdb
+E:\工作\项目文件\康明斯防伪抽奖\KMSLotterySystemFront\KMSLotterySystemFront.Logger\bin\Debug\log4net.dll
+E:\工作\项目文件\康明斯防伪抽奖\KMSLotterySystemFront\KMSLotterySystemFront.Logger\obj\Debug\KMSLotterySystemFront.Logger.csprojResolveAssemblyReference.cache

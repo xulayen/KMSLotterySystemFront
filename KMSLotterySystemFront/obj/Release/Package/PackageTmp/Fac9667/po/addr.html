@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="KMS" ng-controller="configCtrl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <title>康明斯发动机（上海）贸易有限公司</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-controller="lotteryCtrl">
+    <div class="box">
+        <h2 class="title">
+            奖品邮寄地址</h2>
+        <ul class="register" id="city_5">
+            <!--<li class="border">
+                <input type="text" class="pname" name="" id="" ng-model="lottery.pname" maxlength="20"
+                    placeholder="您所在的省份"></li>
+            <li class="border">
+                <input type="text" class="cname" name="" id="" ng-model="lottery.cname" maxlength="20"
+                    placeholder="您居住的城市"></li>-->
+            <li class="">
+                <select class="prov pname" ng-model="lottery.pname">
+                </select>
+                <br />
+            </li>
+            <li class="">
+                <select class="city cname" ng-model="lottery.cname">
+                </select>
+                <br />
+            </li>
+            <li class="border">
+                <input type="text" class="address" name="" id="" ng-model="lottery.addr" maxlength="50"
+                    placeholder="所在街道"></li>
+        </ul>
+        <!--tijiao2.html-->
+        <a href="#" ng-click="lottery.PostAddr()" class="btn">领奖</a>
+    </div>
+    <!--box end-->
+    <script src="../../_public/script/i.js" type="text/javascript"></script>
+    <script src="../controller/lotteryCtrl.js" type="text/javascript"></script>
+    <script src="../../_public/jquery/Plugins/jquery.cityselect.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $("#city_5").citySelect({
+            url: '../../_public/jquery/Plugins/city.js',
+            prov: "",
+            city: "",
+            dist: "",
+            required: false,
+            nodata: "none"
+        });
+    </script>
+</body>
+</html>

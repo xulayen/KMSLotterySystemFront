@@ -1,0 +1,307 @@
+@charset "utf-8";
+/* CSS Document */
+/*2015/08/03 Edit by zanghao*/
+.top img{
+    display: block;
+    width: 100%;
+}
+.erweimabox{
+	    padding: 30px 0 10px;}
+.erweimabox img{
+    display: block;
+    width: 35%;
+	margin:0 auto;
+}
+.box{
+    margin: 30px auto;
+    width: 80%;
+    text-align: center;
+	padding-bottom: 20px;
+}
+.box .btn,.box input[type=text],.box input[type=tel]{
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    height:40px;
+    line-height:40px;
+    text-align: center;
+    border-radius: 5px;
+    background: #f1352d;
+}
+.box select
+{
+ display: block;
+    font-size: 14px;
+    color: #fff;
+    height:40px;
+    line-height:40px;
+    text-align: center;
+    border-radius: 5px;
+    }
+.inbox{
+    height:38px;
+    margin: 30px 0;
+    border-radius: 5px;
+    overflow: hidden;
+    border:2px solid #f1352d;
+}
+.inbox input[type=tel],.inbox input[type=text]{
+    display: block;
+    color: #aaa;
+    overflow: hidden;
+    text-align: left;
+    width: 69%;
+    padding: 0 3%;
+    background: #fff;
+    float: left;
+    border-radius: 5px 0 0 5px;
+}
+.inbox a.btn,.lay a.btn{
+    float: right;
+    height: 38px;
+    line-height:38px;
+    width: 25%;
+    text-align: center;
+    color: #fff;
+    background: #f1352d;
+    border-radius: 5px;
+}
+.textbox{
+    position: relative;
+    font-size: 12px;
+    color: #fff;
+    margin-top: 30px;
+    padding:10px;
+    border-radius: 5px;
+    overflow: hidden;
+    border:1px solid #f1352d;
+}
+.textbox p,.textbox h3{
+    position: relative;
+    z-index: 9;
+	line-height:18px;
+	margin-top:10px;
+}
+.textbox h3{
+    font-size:18px;
+    color: #f1352d;
+	margin-bottom: 8px;
+    font-weight: bold;
+}
+.bg{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: #f1352d;
+    z-index: 0;
+    filter:alpha(opacity:20);
+    opacity:0.2;
+}
+.box h2{
+    margin: 50px 0;
+    height: 30px;
+    line-height:30px;
+    position: relative;
+    font-size:22px;
+}
+.box h2:after{
+    position: absolute;
+    left:50%;
+    top:40px;
+    margin-left: -30px;
+    display: block;
+    content: ' ';
+    height: 4px;
+    background: #f1352d;
+    width: 60px;
+}
+.register{
+    margin-bottom: 50px;
+}
+.register li.border{
+    position: relative;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    padding: 0 0 0 10px;
+    border: 1px solid #fff;
+}
+
+
+.register li.join
+{
+    padding:0px;
+    margin:0px;
+    text-align:left;
+    }
+.register li.boder:after{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 60px;
+    width: 100%;
+    content: ' ';
+    background: #fff;
+    filter:alpha(opacity:30);
+    opacity:0.3;
+    z-index: -1;
+}
+.register li input[type=text],.register li input[type=tel]{
+    background: none;
+    border:none;
+    color: #333;
+    width: 100%;
+    text-align: left;
+    border-radius:5px;
+}
+.register select
+{
+    width:100%;
+    color:#333;
+     border:none;
+
+    }
+.register .yzm{
+	position:absolute;
+	right:10px;
+	top:5px;
+	display:block;
+	height:30px;
+	line-height:30px;
+	background:#221e1f;
+	width:120px;
+	color:#fff;
+	text-align: center;
+	border-radius:5px;
+	}
+.laybox .bg{
+    position: fixed;
+    background:#000;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    filter:alpha(opacity:50);
+    opacity:0.5;
+    z-index: -1;
+}
+.laybox .lay,.df .lay{
+	position:absolute;
+	height:312px;
+	width:100%;
+	left:50%;
+	margin-left: -50%;
+	top:50%;
+	margin-top: -156px;
+}
+.df .lay{
+	height:532px;
+	margin-top: -300px;
+	}
+.laybox .lay a.btn{
+	display:block;
+	float:none;
+	width:80% !important;
+	margin:20px auto 10px !important;
+	}
+
+.laybox .lay div.title{
+    position: relative;
+	width:100%;
+	height:82px;	
+    margin: 0 auto;
+	background:url(../images/layhead01.png) center center no-repeat;
+}
+.df .lay div.title{
+	background:url(../images/layhead.png) center center no-repeat;
+	}
+.laybox div.title img{
+	width:100%;
+    display: block;
+    margin: 0 auto;
+	display:none;
+}
+.laybox .lay div.title h3{
+    width: 100%;
+	line-height:60px;
+    position: absolute;
+    left:0;
+    bottom:22px;
+    color: #fff;
+    font-size:22px;
+    text-align: center;
+}
+.df .lay div.title{ height:230px;}
+.df .lay div.title h3{
+	bottom:22px;}
+.laybox .lay .showpal{
+	width:255px;
+    margin: 0 auto 30px;
+	background:url(../images/showpalbg.png) center center repeat-y;
+    padding:0 0 10px;
+    border-radius: 0 0 5px 5px;
+}
+.laybox .lay .showpal .imgbox{
+    padding:0 0 15px;
+	width:100%;
+}
+.laybox .lay .showpal .imgbox img{
+	width:30%;
+    display: block;
+    margin: 0 auto;
+}
+.laybox .lay .showpal .imgbox h3{
+    height: 35px;
+    line-height:35px;
+    width: 160px;
+    margin:10px auto 0;
+    font-size: 12px;
+    color: #fff;
+    text-shadow: 1px 1px 3px #c27b00;
+    text-align: center;
+    background: url("../images/jiangtitle.png") 0 0 no-repeat;
+}
+.laybox .lay .showpal .f18{
+	text-align: center;
+padding:10px;
+	}
+.laybox .lay .showpal p.warn{
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    width:200px;
+    margin: 0 auto;
+}
+.laybox .lay .showpal a.btn{
+    width: 280px;
+    margin: 30px  auto;
+}
+h2.cred{
+    font-size: 22px;
+    margin:50px 0 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.tjcg .btn{
+    position: absolute;
+    bottom: 50px;
+    width:80%;
+    left: 50%;
+    margin-left: -40%;
+}
+.tjcg p{
+    margin-top:30px;
+}
+span.fwb{
+	display:block;}
+
+.bgnone
+{
+background:none;
+border-radius: 5px;
+border: 1px solid #fff;
+    }

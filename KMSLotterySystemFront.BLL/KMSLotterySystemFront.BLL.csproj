@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4073E305-2CA1-4D79-8CE3-B2996269D023}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KMSLotterySystemFront.BLL</RootNamespace>
+    <AssemblyName>KMSLotterySystemFront.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\dll\Newtonsoft.Json.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RechargeLotteryNewPf.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KMSLotterySystemFront.BLLLottery\KMSLotterySystemFront.BLLLottery.csproj">
+      <Project>{C201C2D6-13E4-4FD3-8BDA-906829839F78}</Project>
+      <Name>KMSLotterySystemFront.BLLLottery</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMSLotterySystemFront.Common\KMSLotterySystemFront.Common.csproj">
+      <Project>{4ABDCDB3-EC38-4413-B1F8-B28081D5FE3A}</Project>
+      <Name>KMSLotterySystemFront.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMSLotterySystemFront.Error\KMSLotterySystemFront.Error.csproj">
+      <Project>{E48442DF-6257-493F-884A-2C93D85A31AD}</Project>
+      <Name>KMSLotterySystemFront.Error</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMSLotterySystemFront.Logger\KMSLotterySystemFront.Logger.csproj">
+      <Project>{4A178BB7-D6D9-40C3-A23F-6BA474BDC70C}</Project>
+      <Name>KMSLotterySystemFront.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMSLotterySystemFront.Model\KMSLotterySystemFront.Model.csproj">
+      <Project>{7D4259CE-92B7-43E8-A47C-590F4C88B0AE}</Project>
+      <Name>KMSLotterySystemFront.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMSLotterySystemFront.Platform\KMSLotterySystemFront.Platform.csproj">
+      <Project>{8ADD81E3-F6E2-42E7-9404-CF4E447BAC41}</Project>
+      <Name>KMSLotterySystemFront.Platform</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

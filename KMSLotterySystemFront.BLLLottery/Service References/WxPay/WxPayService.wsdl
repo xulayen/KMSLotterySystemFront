@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetRedPack">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strIn" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRedPackResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRedPackResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RedPackSendInt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="facId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ccnactivityid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="openId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="money" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hbtype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="total_num" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RedPackSendIntResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RedPackSendIntResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="systemState" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msgresult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RedPackSendOut">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="facId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ccnactivityid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="openId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="money" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codeId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hbtype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="total_num" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RedPackSendOutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RedPackSendOutResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="systemState" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msgresult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRedPackInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="facId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ccnactivityid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mch_billno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRedPackInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetRedPackInfoResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="systemState" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msgresult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resultxml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QYPaySendInt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="facId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ccnactivityid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="openId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="checkreceivenametype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="receivename" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="money" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="desc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QYPaySendIntResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="QYPaySendIntResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="systemState" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msgresult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetRedPackSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRedPack" />
+  </wsdl:message>
+  <wsdl:message name="GetRedPackSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRedPackResponse" />
+  </wsdl:message>
+  <wsdl:message name="RedPackSendIntSoapIn">
+    <wsdl:part name="parameters" element="tns:RedPackSendInt" />
+  </wsdl:message>
+  <wsdl:message name="RedPackSendIntSoapOut">
+    <wsdl:part name="parameters" element="tns:RedPackSendIntResponse" />
+  </wsdl:message>
+  <wsdl:message name="RedPackSendOutSoapIn">
+    <wsdl:part name="parameters" element="tns:RedPackSendOut" />
+  </wsdl:message>
+  <wsdl:message name="RedPackSendOutSoapOut">
+    <wsdl:part name="parameters" element="tns:RedPackSendOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRedPackInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRedPackInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetRedPackInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRedPackInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="QYPaySendIntSoapIn">
+    <wsdl:part name="parameters" element="tns:QYPaySendInt" />
+  </wsdl:message>
+  <wsdl:message name="QYPaySendIntSoapOut">
+    <wsdl:part name="parameters" element="tns:QYPaySendIntResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WxPayServiceSoap">
+    <wsdl:operation name="GetRedPack">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上海中商网络-获取红包</wsdl:documentation>
+      <wsdl:input message="tns:GetRedPackSoapIn" />
+      <wsdl:output message="tns:GetRedPackSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RedPackSendInt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上海中商网络-获取红包</wsdl:documentation>
+      <wsdl:input message="tns:RedPackSendIntSoapIn" />
+      <wsdl:output message="tns:RedPackSendIntSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RedPackSendOut">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上海中商网络-获取红包</wsdl:documentation>
+      <wsdl:input message="tns:RedPackSendOutSoapIn" />
+      <wsdl:output message="tns:RedPackSendOutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRedPackInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上海中商网络-查询红包的具体信息</wsdl:documentation>
+      <wsdl:input message="tns:GetRedPackInfoSoapIn" />
+      <wsdl:output message="tns:GetRedPackInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QYPaySendInt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上海中商网络-企业付款（对内）</wsdl:documentation>
+      <wsdl:input message="tns:QYPaySendIntSoapIn" />
+      <wsdl:output message="tns:QYPaySendIntSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WxPayServiceSoap" type="tns:WxPayServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRedPack">
+      <soap:operation soapAction="http://tempuri.org/GetRedPack" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RedPackSendInt">
+      <soap:operation soapAction="http://tempuri.org/RedPackSendInt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RedPackSendOut">
+      <soap:operation soapAction="http://tempuri.org/RedPackSendOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRedPackInfo">
+      <soap:operation soapAction="http://tempuri.org/GetRedPackInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QYPaySendInt">
+      <soap:operation soapAction="http://tempuri.org/QYPaySendInt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WxPayServiceSoap12" type="tns:WxPayServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRedPack">
+      <soap12:operation soapAction="http://tempuri.org/GetRedPack" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RedPackSendInt">
+      <soap12:operation soapAction="http://tempuri.org/RedPackSendInt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RedPackSendOut">
+      <soap12:operation soapAction="http://tempuri.org/RedPackSendOut" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRedPackInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetRedPackInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QYPaySendInt">
+      <soap12:operation soapAction="http://tempuri.org/QYPaySendInt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WxPayService">
+    <wsdl:port name="WxPayServiceSoap" binding="tns:WxPayServiceSoap">
+      <soap:address location="http://8059.yesno.com.local/WxPayService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WxPayServiceSoap12" binding="tns:WxPayServiceSoap12">
+      <soap12:address location="http://8059.yesno.com.local/WxPayService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SendSmsMTMsg">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strFactoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strBusinessType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMobile" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMTMsg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCodec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SendSmsMTMsgResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendSmsMTMsgResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="strResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMTMsgHasProgram">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strFactoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strBusinessType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMobile" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="strMTMsg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strCodec" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strProgramID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strReserve1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strReserve2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strReserve3" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMTMsgHasProgramResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendMTMsgHasProgramResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="strResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SMS_QueryBalance">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PWD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SMS_QueryBalanceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SMS_QueryBalanceResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendSmsMTMsgSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSmsMTMsg" />
+  </wsdl:message>
+  <wsdl:message name="SendSmsMTMsgSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSmsMTMsgResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendMTMsgHasProgramSoapIn">
+    <wsdl:part name="parameters" element="tns:SendMTMsgHasProgram" />
+  </wsdl:message>
+  <wsdl:message name="SendMTMsgHasProgramSoapOut">
+    <wsdl:part name="parameters" element="tns:SendMTMsgHasProgramResponse" />
+  </wsdl:message>
+  <wsdl:message name="SMS_QueryBalanceSoapIn">
+    <wsdl:part name="parameters" element="tns:SMS_QueryBalance" />
+  </wsdl:message>
+  <wsdl:message name="SMS_QueryBalanceSoapOut">
+    <wsdl:part name="parameters" element="tns:SMS_QueryBalanceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CCNSMSServiceSoap">
+    <wsdl:operation name="SendSmsMTMsg">
+      <wsdl:input message="tns:SendSmsMTMsgSoapIn" />
+      <wsdl:output message="tns:SendSmsMTMsgSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMTMsgHasProgram">
+      <wsdl:input message="tns:SendMTMsgHasProgramSoapIn" />
+      <wsdl:output message="tns:SendMTMsgHasProgramSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SMS_QueryBalance">
+      <wsdl:input message="tns:SMS_QueryBalanceSoapIn" />
+      <wsdl:output message="tns:SMS_QueryBalanceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CCNSMSServiceSoap" type="tns:CCNSMSServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendSmsMTMsg">
+      <soap:operation soapAction="http://tempuri.org/SendSmsMTMsg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMTMsgHasProgram">
+      <soap:operation soapAction="http://tempuri.org/SendMTMsgHasProgram" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SMS_QueryBalance">
+      <soap:operation soapAction="http://tempuri.org/SMS_QueryBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CCNSMSServiceSoap12" type="tns:CCNSMSServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendSmsMTMsg">
+      <soap12:operation soapAction="http://tempuri.org/SendSmsMTMsg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMTMsgHasProgram">
+      <soap12:operation soapAction="http://tempuri.org/SendMTMsgHasProgram" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SMS_QueryBalance">
+      <soap12:operation soapAction="http://tempuri.org/SMS_QueryBalance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CCNSMSService">
+    <wsdl:port name="CCNSMSServiceSoap" binding="tns:CCNSMSServiceSoap">
+      <soap:address location="http://smsinterface.yesno.com.local/CCNSMSService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CCNSMSServiceSoap12" binding="tns:CCNSMSServiceSoap12">
+      <soap12:address location="http://smsinterface.yesno.com.local/CCNSMSService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

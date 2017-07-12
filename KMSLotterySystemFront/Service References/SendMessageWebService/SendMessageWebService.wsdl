@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SendMessages">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="facid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sender" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sendto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="message" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMessagesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendMessagesResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="systemstate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyMobile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="facId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vifycode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyMobileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VerifyMobileResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="systemState" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVerifyMobile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="facId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vifycode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVerifyMobileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetVerifyMobileResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewSendMessages">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sender" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sendto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="message" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bussinessType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewSendMessagesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NewSendMessagesResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="systemState" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewVerifyMobile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vifycode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewVerifyMobileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NewVerifyMobileResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="systemState" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewGetVerifyMobile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vifycode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewGetVerifyMobileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NewGetVerifyMobileResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewSendMessagesNew">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sender" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sendto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="message" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bussinessType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ipServer" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="NewSendMessagesNewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NewSendMessagesNewResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="systemState" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendMessagesSoapIn">
+    <wsdl:part name="parameters" element="tns:SendMessages" />
+  </wsdl:message>
+  <wsdl:message name="SendMessagesSoapOut">
+    <wsdl:part name="parameters" element="tns:SendMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyMobileSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyMobile" />
+  </wsdl:message>
+  <wsdl:message name="VerifyMobileSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyMobileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVerifyMobileSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVerifyMobile" />
+  </wsdl:message>
+  <wsdl:message name="GetVerifyMobileSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVerifyMobileResponse" />
+  </wsdl:message>
+  <wsdl:message name="NewSendMessagesSoapIn">
+    <wsdl:part name="parameters" element="tns:NewSendMessages" />
+  </wsdl:message>
+  <wsdl:message name="NewSendMessagesSoapOut">
+    <wsdl:part name="parameters" element="tns:NewSendMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="NewVerifyMobileSoapIn">
+    <wsdl:part name="parameters" element="tns:NewVerifyMobile" />
+  </wsdl:message>
+  <wsdl:message name="NewVerifyMobileSoapOut">
+    <wsdl:part name="parameters" element="tns:NewVerifyMobileResponse" />
+  </wsdl:message>
+  <wsdl:message name="NewGetVerifyMobileSoapIn">
+    <wsdl:part name="parameters" element="tns:NewGetVerifyMobile" />
+  </wsdl:message>
+  <wsdl:message name="NewGetVerifyMobileSoapOut">
+    <wsdl:part name="parameters" element="tns:NewGetVerifyMobileResponse" />
+  </wsdl:message>
+  <wsdl:message name="NewSendMessagesNewSoapIn">
+    <wsdl:part name="parameters" element="tns:NewSendMessagesNew" />
+  </wsdl:message>
+  <wsdl:message name="NewSendMessagesNewSoapOut">
+    <wsdl:part name="parameters" element="tns:NewSendMessagesNewResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SendMessageWebServiceSoap">
+    <wsdl:operation name="SendMessages">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上海中商网络-短信发送接口</wsdl:documentation>
+      <wsdl:input message="tns:SendMessagesSoapIn" />
+      <wsdl:output message="tns:SendMessagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyMobile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上海中商网络-验证短信码是否正确</wsdl:documentation>
+      <wsdl:input message="tns:VerifyMobileSoapIn" />
+      <wsdl:output message="tns:VerifyMobileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVerifyMobile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上海中商网络-获取手机验证码是否正确</wsdl:documentation>
+      <wsdl:input message="tns:GetVerifyMobileSoapIn" />
+      <wsdl:output message="tns:GetVerifyMobileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NewSendMessages">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上海中商网络-短信发送接口</wsdl:documentation>
+      <wsdl:input message="tns:NewSendMessagesSoapIn" />
+      <wsdl:output message="tns:NewSendMessagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NewVerifyMobile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上海中商网络-验证短信码是否正确</wsdl:documentation>
+      <wsdl:input message="tns:NewVerifyMobileSoapIn" />
+      <wsdl:output message="tns:NewVerifyMobileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NewGetVerifyMobile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上海中商网络-获取手机验证码是否正确</wsdl:documentation>
+      <wsdl:input message="tns:NewGetVerifyMobileSoapIn" />
+      <wsdl:output message="tns:NewGetVerifyMobileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="NewSendMessagesNew">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上海中商网络-短信发送接口2</wsdl:documentation>
+      <wsdl:input message="tns:NewSendMessagesNewSoapIn" />
+      <wsdl:output message="tns:NewSendMessagesNewSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SendMessageWebServiceSoap" type="tns:SendMessageWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendMessages">
+      <soap:operation soapAction="http://tempuri.org/SendMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyMobile">
+      <soap:operation soapAction="http://tempuri.org/VerifyMobile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVerifyMobile">
+      <soap:operation soapAction="http://tempuri.org/GetVerifyMobile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewSendMessages">
+      <soap:operation soapAction="http://tempuri.org/NewSendMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewVerifyMobile">
+      <soap:operation soapAction="http://tempuri.org/NewVerifyMobile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewGetVerifyMobile">
+      <soap:operation soapAction="http://tempuri.org/NewGetVerifyMobile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewSendMessagesNew">
+      <soap:operation soapAction="http://tempuri.org/NewSendMessagesNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SendMessageWebServiceSoap12" type="tns:SendMessageWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendMessages">
+      <soap12:operation soapAction="http://tempuri.org/SendMessages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyMobile">
+      <soap12:operation soapAction="http://tempuri.org/VerifyMobile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVerifyMobile">
+      <soap12:operation soapAction="http://tempuri.org/GetVerifyMobile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewSendMessages">
+      <soap12:operation soapAction="http://tempuri.org/NewSendMessages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewVerifyMobile">
+      <soap12:operation soapAction="http://tempuri.org/NewVerifyMobile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewGetVerifyMobile">
+      <soap12:operation soapAction="http://tempuri.org/NewGetVerifyMobile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewSendMessagesNew">
+      <soap12:operation soapAction="http://tempuri.org/NewSendMessagesNew" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SendMessageWebService">
+    <wsdl:port name="SendMessageWebServiceSoap" binding="tns:SendMessageWebServiceSoap">
+      <soap:address location="http://points.yesno.com.cn/newpsms/SendMessageWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SendMessageWebServiceSoap12" binding="tns:SendMessageWebServiceSoap12">
+      <soap12:address location="http://points.yesno.com.cn/newpsms/SendMessageWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

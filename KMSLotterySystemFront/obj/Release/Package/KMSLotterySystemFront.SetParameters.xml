@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Default Web Site/KMSLotterySystemFront_deploy" />
+  <setParameter name="OracleConnectionStringTest-Web.config Connection String" value="Data Source=CCN1;User ID=develop;Password=develop;Unicode=True" />
+  <setParameter name="OracleConnectionStringTest1-Web.config Connection String" value="Data Source=NEW_CCN;User ID=ccn;Password=acZs_A3T1byP4;Unicode=True" />
+</parameters>

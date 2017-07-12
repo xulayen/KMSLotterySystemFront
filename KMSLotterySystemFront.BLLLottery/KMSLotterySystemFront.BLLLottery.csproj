@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C201C2D6-13E4-4FD3-8BDA-906829839F78}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KMSLotterySystemFront.BLLLottery</RootNamespace>
+    <AssemblyName>KMSLotterySystemFront.BLLLottery</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CCN.Code2D, Version=2.0.4.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CCN.Code2D.2.0.4.1\lib\CCN.Code2D.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CCN.QrCode.Cryptographic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CCN.Code2D.2.0.4.1\lib\CCN.QrCode.Cryptographic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CCN.WeiXin">
+      <HintPath>..\dll\CCN.WeiXin.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\dll\Newtonsoft.Json.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WxPayAPI">
+      <HintPath>..\dll\WxPayAPI\WxPayAPI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="ControlBLL.cs" />
+    <Compile Include="DelegateSms.cs" />
+    <Compile Include="DigitcodeBLL.cs" />
+    <Compile Include="ECouponBll.cs" />
+    <Compile Include="LotteryBLL.cs" />
+    <Compile Include="LotteryPlatFormBLL.cs" />
+    <Compile Include="PointsControlBLL.cs" />
+    <Compile Include="PointsLotteryBLL.cs" />
+    <Compile Include="PostAddressBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PubInfo.cs" />
+    <Compile Include="RedPackSend.cs" />
+    <Compile Include="Service References\NewCcnSendSms\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\WxPay\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="smsBLL.cs" />
+    <Compile Include="UserDhLotteryBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KMSLotterySystemFront.Common\KMSLotterySystemFront.Common.csproj">
+      <Project>{4ABDCDB3-EC38-4413-B1F8-B28081D5FE3A}</Project>
+      <Name>KMSLotterySystemFront.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMSLotterySystemFront.DAL\KMSLotterySystemFront.DAL.csproj">
+      <Project>{E29D1B3D-9B96-46F6-A9D8-9C47066F1709}</Project>
+      <Name>KMSLotterySystemFront.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMSLotterySystemFront.Logger\KMSLotterySystemFront.Logger.csproj">
+      <Project>{4A178BB7-D6D9-40C3-A23F-6BA474BDC70C}</Project>
+      <Name>KMSLotterySystemFront.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMSLotterySystemFront.Model\KMSLotterySystemFront.Model.csproj">
+      <Project>{7D4259CE-92B7-43E8-A47C-590F4C88B0AE}</Project>
+      <Name>KMSLotterySystemFront.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Service References\NewCcnSendSms\CCNSMSService.wsdl" />
+    <None Include="Service References\WxPay\WxPayService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\NewCcnSendSms\" />
+    <WCFMetadataStorage Include="Service References\WxPay\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NewCcnSendSms\CCNSMSService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NewCcnSendSms\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NewCcnSendSms\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\NewCcnSendSms\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WxPay\WxPayService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WxPay\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WxPay\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\WxPay\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

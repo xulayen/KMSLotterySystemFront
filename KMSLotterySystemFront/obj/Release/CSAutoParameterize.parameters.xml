@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="OracleConnectionStringTest-Web.config Connection String" description="OracleConnectionStringTest 应用程序在 web.config 中用来访问数据库的连接字符串。" defaultvalue="Data Source=CCN1;User ID=develop;Password=develop;Unicode=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\工作\\项目文件\\康明斯防伪抽奖\\KMSLotterySystemFront\\KMSLotterySystemFront\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='OracleConnectionStringTest']/@connectionString" />
+  </parameter>
+  <parameter name="OracleConnectionStringTest1-Web.config Connection String" description="OracleConnectionStringTest1 应用程序在 web.config 中用来访问数据库的连接字符串。" defaultvalue="Data Source=NEW_CCN;User ID=ccn;Password=acZs_A3T1byP4;Unicode=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\工作\\项目文件\\康明斯防伪抽奖\\KMSLotterySystemFront\\KMSLotterySystemFront\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='OracleConnectionStringTest1']/@connectionString" />
+  </parameter>
+</parameters>

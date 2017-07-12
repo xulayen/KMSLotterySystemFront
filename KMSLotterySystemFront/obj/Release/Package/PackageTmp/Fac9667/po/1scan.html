@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html ng-app="KMS" ng-controller="configCtrl">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>扫码抽奖</title>
+</head>
+<body class="login_page none">
+    <fieldset ng-controller="scanCtrl">
+        <legend>扫码抽奖</legend>
+        <button ng-click="scan.Scan()">
+            扫描</button>
+        <br />
+        <br />
+        <input type="text" name="name" class="sIput_input" value=" " placeholder="16位数码"
+            ng-model="scan.code" />
+        <br />
+        <br />
+        <input type="button" name="name" value="扫描抽奖" ng-click="scan.Submit()" />
+    </fieldset>
+    <script src="../../_public/script/i.js" type="text/javascript"></script>
+    <script src="../controller/scanCtrl.js" type="text/javascript"></script>
+</body>
+</html>

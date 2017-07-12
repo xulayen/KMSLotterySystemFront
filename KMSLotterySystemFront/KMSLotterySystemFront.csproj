@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{024E9F89-8D48-467A-AA52-042EB727C259}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KMSLotterySystemFront</RootNamespace>
+    <AssemblyName>KMSLotterySystemFront</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CCN.Code2D, Version=2.0.4.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CCN.Code2D.2.0.4.1\lib\CCN.Code2D.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CCN.QrCode.Cryptographic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CCN.Code2D.2.0.4.1\lib\CCN.QrCode.Cryptographic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Senparc.Weixin, Version=4.11.9.36951, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Senparc.Weixin.4.11.9\lib\net40\Senparc.Weixin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Senparc.Weixin.MP, Version=14.3.142.36952, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Senparc.Weixin.MP.14.3.142\lib\net40\Senparc.Weixin.MP.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SGM.Common">
+      <HintPath>..\dll\SGM.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fac9667\controller\main.js" />
+    <Content Include="Fac9667\controller\regCtrl.js" />
+    <Content Include="Fac9667\controller\scanCtrl.js" />
+    <Content Include="Fac9667\controller\home.js" />
+    <Content Include="Fac9667\controller\lotteryCtrl.js" />
+    <Content Include="Fac9667\controller\successCtrl.js" />
+    <Content Include="Fac9667\directives\directives.js" />
+    <Content Include="Fac9667\fw\index.html" />
+    <Content Include="Fac9667\po\1index.html" />
+    <Content Include="Fac9667\po\1reg.html" />
+    <Content Include="Fac9667\po\1scan.html" />
+    <Content Include="Fac9667\po\error.html" />
+    <Content Include="Fac9667\po\css\animate.min.css" />
+    <Content Include="Fac9667\po\css\common.css" />
+    <Content Include="Fac9667\po\css\style.css" />
+    <Content Include="Fac9667\po\homepage.html" />
+    <Content Include="Fac9667\po\images\bag.jpg" />
+    <Content Include="Fac9667\po\images\bags.jpg" />
+    <Content Include="Fac9667\po\images\erweima.png" />
+    <Content Include="Fac9667\po\images\erweima01.png" />
+    <Content Include="Fac9667\po\images\hometop.png" />
+    <Content Include="Fac9667\po\images\ipad.jpg" />
+    <Content Include="Fac9667\po\images\jiangtitle.png" />
+    <Content Include="Fac9667\po\images\layhead.png" />
+    <Content Include="Fac9667\po\images\layhead01.png" />
+    <Content Include="Fac9667\po\images\mainbg.png" />
+    <Content Include="Fac9667\po\images\ng.png" />
+    <Content Include="Fac9667\po\images\phone.jpg" />
+    <Content Include="Fac9667\po\images\phone.png" />
+    <Content Include="Fac9667\po\images\showpalbg.png" />
+    <Content Include="Fac9667\po\images\tg.png" />
+    <Content Include="Fac9667\po\images\tool.jpg" />
+    <Content Include="Fac9667\po\images\top.png" />
+    <Content Include="Fac9667\po\index.html" />
+    <Content Include="Fac9667\po\addr.html" />
+    <Content Include="Fac9667\po\scan.html" />
+    <Content Include="Fac9667\po\tg - 副本.html" />
+    <Content Include="Fac9667\po\tg.html" />
+    <Content Include="Fac9667\po\tijiao.html" />
+    <Content Include="Fac9667\po\success.html" />
+    <Content Include="Fac9667\po\lottery.html" />
+    <Content Include="Fac9667\po\reg.html" />
+    <Content Include="Fac9667\po\答复.html" />
+    <Content Include="Fac9667\services\services.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Fac9667\Web.config" />
+    <None Include="Service References\SendMessageWebService\SendMessageWebService.disco" />
+    <None Include="Service References\SendMessageWebService\configuration91.svcinfo" />
+    <None Include="Service References\SendMessageWebService\configuration.svcinfo" />
+    <None Include="Service References\SendMessageWebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+    <Content Include="_public\angular\angular-resource.js" />
+    <Content Include="_public\angular\angular-route.min.js" />
+    <Content Include="_public\angular\angular-sanitize.min.js" />
+    <Content Include="_public\angular\angular.js" />
+    <Content Include="_public\angular\angular.min.js" />
+    <Content Include="_public\bootstrap-3.3.6-dist\css\bootstrap-theme.css" />
+    <Content Include="_public\bootstrap-3.3.6-dist\css\bootstrap-theme.min.css" />
+    <Content Include="_public\bootstrap-3.3.6-dist\css\bootstrap.css" />
+    <Content Include="_public\bootstrap-3.3.6-dist\css\bootstrap.min.css" />
+    <Content Include="_public\bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="_public\bootstrap-3.3.6-dist\js\bootstrap.js" />
+    <Content Include="_public\bootstrap-3.3.6-dist\js\bootstrap.min.js" />
+    <Content Include="_public\bootstrap-3.3.6-dist\js\npm.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\css\bootstrap-datetimepicker.css" />
+    <Content Include="_public\bootstrap-datetimepicker-master\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\bootstrap-datetimepicker.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ar.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.bg.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ca.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.cs.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.da.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.de.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ee.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.el.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.es.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.fi.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.fr.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.he.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.hr.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.hu.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.id.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.is.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.it.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ja.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ko.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.lt.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.lv.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ms.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.nb.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.nl.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.no.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.pl.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.pt-BR.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.pt.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ro.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.rs-latin.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.rs.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ru.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.sk.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.sl.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.sv.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.sw.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.th.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.tr.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.ua.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.uk.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.zh-CN.js" />
+    <Content Include="_public\bootstrap-datetimepicker-master\js\locales\bootstrap-datetimepicker.zh-TW.js" />
+    <Content Include="_public\jquery\jquery-2.2.0.min.js" />
+    <Content Include="_public\jquery\Plugins\.idea\encodings.xml" />
+    <Content Include="_public\jquery\Plugins\.idea\modules.xml" />
+    <Content Include="_public\jquery\Plugins\.idea\scopes\scope_settings.xml" />
+    <Content Include="_public\jquery\Plugins\.idea\vcs.xml" />
+    <Content Include="_public\jquery\Plugins\.idea\workspace.xml" />
+    <Content Include="_public\jquery\Plugins\autoRem.js" />
+    <Content Include="_public\jquery\Plugins\BroswerUtil.js" />
+    <Content Include="_public\jquery\Plugins\jquery.base64.js" />
+    <Content Include="_public\jquery\Plugins\jquery.cityselect.js" />
+    <Content Include="_public\jquery\Plugins\jquery.form.red.js" />
+    <Content Include="_public\jquery\Plugins\jquery.lazyload.js" />
+    <Content Include="_public\jquery\Plugins\jquery.validate.js" />
+    <Content Include="_public\jquery\Plugins\Jquery.WeChat.1.2.0.js" />
+    <Content Include="_public\jquery\Plugins\Jquery.WeChat.1.2.2.beta.js" />
+    <Content Include="_public\jquery\Plugins\Jquery.WeChat.js" />
+    <Content Include="_public\jquery\Plugins\city.js" />
+    <Content Include="_public\jquery\Plugins\swiper.animate.min.js" />
+    <Content Include="_public\jquery\Plugins\swiper.min.js" />
+    <Content Include="_public\layer\extend\layer.ext.js" />
+    <Content Include="_public\layer\layer.js" />
+    <Content Include="_public\layer\mobile\layer.js" />
+    <Content Include="_public\layer\mobile\need\layer.css" />
+    <Content Include="_public\layer\skin\default\icon-ext.png" />
+    <Content Include="_public\layer\skin\default\icon.png" />
+    <Content Include="_public\layer\skin\default\layer.css" />
+    <Content Include="_public\layer\skin\default\loading-0.gif" />
+    <Content Include="_public\layer\skin\default\loading-1.gif" />
+    <Content Include="_public\layer\skin\default\loading-2.gif" />
+    <Content Include="_public\layer\skin\layer.css" />
+    <Content Include="_public\layer\skin\layer.ext.css" />
+    <Content Include="_public\notwechart\authorize.html" />
+    <Content Include="_public\readMe.txt" />
+    <Content Include="_public\script\autoRem.js" />
+    <Content Include="_public\script\function.js" />
+    <Content Include="_public\script\i.js" />
+    <Content Include="_public\script\jweixin-1.0.0.js" />
+    <Content Include="_public\touchswipe\touchswipe.min.js" />
+    <None Include="Service References\SendMessageWebService\SendMessageWebService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\BaseAshx.cs" />
+    <Compile Include="Fac9667\server\KMS.ashx.cs">
+      <DependentUpon>KMS.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\SendMessageWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_public\clientlog\clientLog.ashx.cs">
+      <DependentUpon>clientLog.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="_public\Token\Handler1.ashx.cs">
+      <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="_public\Token\token.ashx.cs">
+      <DependentUpon>token.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fac9667\server\KMS.ashx" />
+    <Content Include="packages.config" />
+    <None Include="_public\bootstrap-3.3.6-dist\css\bootstrap-theme.css.map" />
+    <None Include="_public\bootstrap-3.3.6-dist\css\bootstrap-theme.min.css.map" />
+    <None Include="_public\bootstrap-3.3.6-dist\css\bootstrap.css.map" />
+    <None Include="_public\bootstrap-3.3.6-dist\css\bootstrap.min.css.map" />
+    <None Include="_public\bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="_public\bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="_public\bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="_public\bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="_public\clientlog\clientLog.ashx" />
+    <None Include="_public\jquery\Plugins\.idea\.name" />
+    <None Include="_public\jquery\Plugins\.idea\Plugins.iml" />
+    <Content Include="_public\Token\token.ashx" />
+    <Content Include="_public\Token\Handler1.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KMSLotterySystemFront.BLL\KMSLotterySystemFront.BLL.csproj">
+      <Project>{4073E305-2CA1-4D79-8CE3-B2996269D023}</Project>
+      <Name>KMSLotterySystemFront.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMSLotterySystemFront.Common\KMSLotterySystemFront.Common.csproj">
+      <Project>{4ABDCDB3-EC38-4413-B1F8-B28081D5FE3A}</Project>
+      <Name>KMSLotterySystemFront.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMSLotterySystemFront.Error\KMSLotterySystemFront.Error.csproj">
+      <Project>{E48442DF-6257-493F-884A-2C93D85A31AD}</Project>
+      <Name>KMSLotterySystemFront.Error</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMSLotterySystemFront.Logger\KMSLotterySystemFront.Logger.csproj">
+      <Project>{4A178BB7-D6D9-40C3-A23F-6BA474BDC70C}</Project>
+      <Name>KMSLotterySystemFront.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMSLotterySystemFront.Model\KMSLotterySystemFront.Model.csproj">
+      <Project>{7D4259CE-92B7-43E8-A47C-590F4C88B0AE}</Project>
+      <Name>KMSLotterySystemFront.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fac9667\po\js\" />
+    <Folder Include="_public\font\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SendMessageWebService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>29097</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
